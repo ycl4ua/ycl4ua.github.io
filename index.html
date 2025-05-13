@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name – ECE PhD Student</n>
+  <title>Yicheng Leng</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #24292e; margin: 0; line-height: 1.6; }
-    header { background: #24292e; color: #fff; padding: 1rem 2rem; }
+    header { background: #fff; color: #fff; padding: 1rem 2rem; }
     header .container { display: flex; align-items: center; justify-content: space-between; }
     header h1 { margin: 0; font-size: 1.5rem; }
-    nav a { color: #fff; margin-left: 1rem; text-decoration: none; font-weight: 500; }
+    nav a { color: #24292e; margin-left: 1rem; text-decoration: none; font-weight: 500; }
     section { padding: 4rem 2rem; max-width: 800px; margin: auto; }
     section h2 { border-bottom: 2px solid #e1e4e8; padding-bottom: .5rem; margin-bottom: 1rem; }
-    .hero { text-align: center; padding: 6rem 2rem; background: #f6f8fa; }
-    .hero h2 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-    .hero p { font-size: 1.1rem; color: #586069; }
+    .hero { display: flex; align-items: center; gap: 2rem; padding: 4rem 2rem; background: #f6f8fa; max-width: 1000px; margin: auto; }
+    .hero img { width: 200px; height: auto; object-fit: cover; border-radius: 0%; }
+    .hero-caption { font-size: 0.8rem; color: #586069; text-align: center; margin-top: 0.5rem; }
+    .hero-text { flex: 1; }
+    .hero-text h2 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .hero-text p { font-size: 1.1rem; color: #586069; }
     .pub-list, .contact-list { list-style: none; padding: 0; }
     .pub-list li, .contact-list li { margin-bottom: .5rem; }
     footer { text-align: center; padding: 2rem; font-size: .9rem; color: #586069; }
@@ -23,52 +26,126 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>Your Name</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <div class="container" style="display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;">
+    <div style="justify-self: start;">
+      <a href="https://ece.engineering.arizona.edu/" style="text-decoration: none; display: flex; align-items: center;">
+        <div style="height: 40px; border-radius: 20px; overflow: hidden; display: flex; align-items: center;">
+          <img src="ECE.png" alt="ECE Logo" style="height: 100%; width: auto; object-fit: cover;">
+        </div>
+      </a>
     </div>
-  </header>
+
+    <div style="justify-self: center;">
+      <a href="https://vsi-lab.vercel.app/" style="text-decoration: none; display: flex; align-items: center;">
+        <div style="width: 40px; height: 40px; background-color: #990000; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+          <span style="font-size: 0.9rem; user-select: none;">VSI</span>
+        </div>
+      </a>
+    </div>
+
+    <nav style="justify-self: end; display: flex; align-items: center;">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
   <section class="hero">
-    <h2>Hi, I'm Your Name</h2>
-    <p>PhD Candidate in Electrical and Computer Engineering at University Name</p>
+    <div>
+      <img src="portrait.jpg" alt="Your Photo">
+      <div class="hero-caption" style="text-align: left; margin-left: 0; width: 200px; word-wrap: break-word;">This photo was taken at undergrad commencement ceremony in 2021.</div>
+    </div>
+    <div class="hero-text">
+      <!-- <h2>Hi, I'm Your Name</h2> -->
+      <p>Hi, I'm <strong>Yicheng Leng</strong>, first-year  ECE PhD Candidate in the <strong>Vision, Systems and Intelligence Lab (VSI)</strong> from the Department of Electrical and Computer Engineering at the University of Arizona. My current research includes self-supervised learning, graph neural networks, and vision-language models for medical application, under the supervision of <strong>Dr. Eung-Joo Lee</strong>. Apart from my individual research projects, I have collaborated with Children's National Hospital and Imperial College London on a project of self-supervised learning framework for autism detection. Prior to joining the University of Arizona, my research focused on deep learning-based image restoration and inpainting. In particular, I worked with a technology company on a watermark removal project, which led to publications and products. From undergraduate through doctoral studies, I have developed a strong foundation in mathematics, statistics, and programming, and I am committed to advancing work in AI for healthcare and multimodal learning in the future.</p>
+    
+      <div style="margin-top: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+  <span style="font-weight: bold; margin-right: 0.5rem;">Personal Links:</span>
+  <a href="https://scholar.google.com/citations?user=DgY4RnkAAAAJ&hl=en" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlescholar.svg" alt="Google Scholar" style="height: 20px; width: 20px;">
+  </a>
+  <a href="https://www.linkedin.com/in/yicheng-leng-9703b1337/?trk=opento_sprofile_topcard" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="height: 20px; width: 20px;">
+  </a>
+  <a href="https://github.com/ycl4ua" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" style="height: 20px; width: 20px;">
+  </a>
+</div>
+    </div>
   </section>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>Brief introduction about your background, research interests, and current work. Replace this placeholder text with your own summary.</p>
-  </section>
+  
 
   <section id="research">
     <h2>Research</h2>
-    <p>Describe your current research projects, methodologies, and contributions. You can include links to project pages or repositories.</p>
+    <ul>
+      <li>Self-supervised learning for medical image analysis</li>
+      <li>Graph representations for brain networks</li>
+      <li>Vision-language models for corrupted surgical data</li>
+      <li>Computer vision tasks: image restoration, image inpainting, semantic segmentation and watermark removal</li>
+    </ul>
   </section>
 
   <section id="publications">
-    <h2>Publications</h2>
-    <ul class="pub-list">
-      <li>Doe, J., & Your Name. (2025). Title of Paper. <em>Journal Name</em>.</li>
-      <li>Doe, J., & Your Name. (2024). Title of Conference Paper. <em>Conference Name</em>.</li>
-      <!-- Add more publications -->
+    <h2>Publications (First Author)</h2>
+    <div style="display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 2rem;">
+      <img src="autism.png" alt="Publication Thumbnail" style="width: 800px; height: auto; object-fit: cover; border-radius: 4px;">
+      <div style="margin-top: 1rem; text-align: start;">
+  <p><em><a href="https://arxiv.org/pdf/2501.16346" style="text-decoration: underline; color: inherit;">Self-supervised Graph Transformer with Contrastive Learning for Brain Connectivity Analysis towards Improving Autism Detection</a></em></p>
+  <p style="font-size: 0.9rem; margin-top: 0.2rem;"><strong>Yicheng Leng</strong>, Syed Muhammad Anwar, Islem Rekik, Sen He, Eung-Joo Lee</p>
+  <p style="font-size: 0.85rem; margin-top: 0.1rem;"></pstyle>Proceedings of IEEE International Symposium on Biomedical Imaging (<strong>ISBI</strong>), 2025 (Oral)</p></div>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #ccc; margin: 2rem 0;">
+
+    
+    <div style="display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 2rem;">
+      <img src="rbc.png" alt="Publication Thumbnail" style="width: 800px; height: auto; object-fit: cover; border-radius: 4px;">
+      <div style="margin-top: 1rem; text-align: start;">
+  <p><em><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13413/1341313/SLRBC--self-supervised-learning-for-red-blood-cell-segmentation/10.1117/12.3047367.short" style="text-decoration: underline; color: inherit;">SLRBC: Self-supervised Learning for Red Blood Cell Segmentation and Classification with a Biased Contrastive Loss</a></em></p>
+  <p style="font-size: 0.9rem; margin-top: 0.2rem;"><strong>Yicheng Leng</strong>, Eung-Joo Lee</p>
+  <p style="font-size: 0.85rem; margin-top: 0.1rem;"></pstyle>Proceedings of SPIE Medical Imaging, 2025</p></div>
+    </div>
+    <hr style="border: none; border-top: 1px solid #ccc; margin: 2rem 0;">
+
+    <div style="display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 2rem;">
+      <img src="watermark2025.png" alt="Publication Thumbnail" style="width: 800px; height: auto; object-fit: cover; border-radius: 4px;">
+      <div style="margin-top: 1rem; text-align: start;">
+  <p><em><a href="https://ojs.aaai.org/index.php/AAAI/article/view/32484/34639" style="text-decoration: underline; color: inherit;">Bridging Knowledge Gap Between Image Inpainting and Large-Area Visible Watermark Removal</a></em></p>
+  <p style="font-size: 0.9rem; margin-top: 0.2rem;"><strong>Yicheng Leng</strong>, Chaowei Fang, Junye Chen, Yixiang Fang, Sheng Li, Guanbin Li</p>
+  <p style="font-size: 0.85rem; margin-top: 0.1rem;"></pstyle>Proceedings of AAAI Conference on Artificial Intelligence (<strong>AAAI</strong>), 2025</p></div>
+    </div>
+    <hr style="border: none; border-top: 1px solid #ccc; margin: 2rem 0;">
+    <div style="display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 2rem;">
+      <img src="watermark2024.png" alt="Publication Thumbnail" style="width: 800px; height: auto; object-fit: cover; border-radius: 4px;">
+      <div style="margin-top: 1rem; text-align: start;">
+  <p><em><a href="https://ojs.aaai.org/index.php/AAAI/article/view/28080/28166" style="text-decoration: underline; color: inherit;">Removing interference and recovering content imaginatively for visible watermark removal</a></em></p>
+  <p style="font-size: 0.9rem; margin-top: 0.2rem;"><strong>Yicheng Leng</strong>, Chaowei Fang, Gen Li, Yixiang Fang, Guanbin Li</p>
+  <p style="font-size: 0.85rem; margin-top: 0.1rem;"></pstyle>Proceedings of AAAI Conference on Artificial Intelligence (<strong>AAAI</strong>), 2024</p></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>Pursuing Ph.D. in Electrical and Computer Engineering, University of Arizona, 2024–present</li>
+      <li>M.S. in Data Science, The Chinese University of Hong Kong, Shenzhen, 2021–2023</li>
+      <li>B.S. in Statistics (Data Science), The Chinese University of Hong Kong, Shenzhen, 2017–2021</li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <ul class="contact-list">
-      <li>Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a></li>
-      <li>GitHub: <a href="https://github.com/yourusername" target="_blank">@yourusername</a></li>
-      <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></li>
+      <li>Email: <a href="yichengleng@arizona.edu">yichengleng@arizona.edu</a></li>
+      <li>WeChat: lengyicheng15
     </ul>
   </section>
 
   <footer>
-    &copy; 2025 Your Name. Built with ❤️ and GitHub Pages.
+    &copy; 2025 Yicheng Leng. Built with ❤️ and GitHub Pages.
   </footer>
 </body>
 </html>
