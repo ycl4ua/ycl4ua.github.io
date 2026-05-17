@@ -55,8 +55,9 @@
     .pub-block { margin-bottom: 3rem; }
     img { max-width: 100%; border-radius: 4px; }
   </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="subpage publications-page">
 
   <header>
     <div class="container">
@@ -77,14 +78,14 @@
       <nav style="justify-self: end; display: flex; align-items: center;">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
+        <a href="publications.html" class="active" aria-current="page">Publications</a>
         <a href="education.html">Education</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section>
+  <section class="page-section publications-section">
     <h2>Publications (First Author)</h2>
 
     <div class="pub-block">
@@ -113,6 +114,20 @@
       <p><em><a href="https://ojs.aaai.org/index.php/AAAI/article/view/28080" style="text-decoration: underline;">Removing interference and recovering content imaginatively for visible watermark removal</a></em></p>
       <p><strong>Yicheng Leng</strong>, Chaowei Fang, Gen Li, Yixiang Fang, Guanbin Li</p>
       <p>AAAI 2024</p>
+    </div>
+
+    <h2 class="subsection-heading">Collaborative Publications</h2>
+
+    <div class="pub-block coauthor-pub">
+      <p><em><a href="https://ieeexplore.ieee.org/abstract/document/10871924" style="text-decoration: underline;">Decouple and couple: exploiting prior knowledge for visible video watermark removal</a></em></p>
+      <p>Junye Chen, Chaowei Fang, Jichang Li, <strong>Yicheng Leng</strong>, Guanbin Li</p>
+      <p>IEEE Transactions on Image Processing, 2025</p>
+    </div>
+
+    <div class="pub-block coauthor-pub">
+      <p><em><a href="https://arxiv.org/abs/2407.11906" style="text-decoration: underline;">SegSTRONG-C: Segmenting Surgical Tools Robustly On Non-adversarial Generated Corruptions--An EndoVis' 24 Challenge</a></em></p>
+      <p>Hao Ding, Yuqian Zhang, Tuxun Lu, Ruixing Liang, ... <strong>Yicheng Leng</strong>, et al.</p>
+      <p>arXiv preprint arXiv:2407.11906, 2024</p>
     </div>
 
     <a class="back-link" href="index.html">← Back to Home</a>
