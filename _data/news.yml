@@ -3,7 +3,9 @@
 # 想暂时隐藏整块，清空本文件即可。
 
 - date: "2026.10"
-  text: "SegSTRONG-C, the EndoVis 2024 challenge report, appears in <strong>IEEE Transactions on Medical Imaging</strong>."
+  text: '<a href="publications.html#segstrong">SegSTRONG-C</a>, the EndoVis 2024 challenge report, appears in <strong>IEEE Transactions on Medical Imaging</strong>.'
+- date: "2025.10"
+  text: "Passed the <strong>PhD qualifying exam</strong>."
 - date: "2025.04"
   text: '<a href="publications.html#slrbc">A first-authored paper</a> on a self-supervised contrastive framework for red blood cell analysis, accepted by <strong>SPIE Medical Imaging 2025</strong>.'
 - date: "2025.04"
@@ -12,5 +14,7 @@
   text: '<a href="publications.html#aaai25">A first-authored paper</a> on bringing inpainting priors to large-area watermark removal, accepted by <strong>AAAI 2025</strong>.'
 - date: "2025.02"
   text: '<a href="publications.html#tip25">A paper</a> on exploiting prior knowledge for visible video watermark removal, accepted by <strong>IEEE TIP 2025</strong>.'
+- date: "2024.08"
+  text: "Started my <strong>PhD</strong> in Computer Science and Engineering at the University of Arizona."
 - date: "2024.03"
   text: '<a href="publications.html#aaai24">A first-authored paper</a> on a two-stage framework that separates watermark exclusion from background restoration, accepted by <strong>AAAI 2024</strong>.'
