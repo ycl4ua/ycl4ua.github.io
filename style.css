@@ -125,9 +125,8 @@ a:hover {
   justify-self: start;
   display: flex;
   align-items: center;
-  height: 40px;
   text-decoration: none;
-  opacity: 0.88;
+  opacity: 0.9;
   transition: opacity 160ms var(--ease);
 }
 
@@ -136,9 +135,9 @@ a:hover {
 }
 
 .brand img {
-  height: 100%;
-  width: auto;
   display: block;
+  height: 34px;
+  width: auto;
 }
 
 .vsi-badge {
@@ -515,6 +514,65 @@ strong {
 
 .subsection-heading {
   margin-top: 3rem;
+}
+
+/* ---------- research ---------- */
+
+.research-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.research-item:first-of-type {
+  padding-top: 0.5rem;
+}
+
+.research-item:last-of-type {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.research-item h3 {
+  margin: 0 0 1.1rem;
+  color: var(--ink);
+  font-size: 1.18rem;
+  font-weight: 620;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+}
+
+.research-meta {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 6.2rem minmax(0, 1fr);
+  gap: 0.7rem 1.4rem;
+}
+
+.research-meta dt {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  line-height: 1.9;
+  text-transform: uppercase;
+}
+
+.research-meta dd {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.72;
+}
+
+@media (max-width: 620px) {
+  .research-meta {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .research-meta dd {
+    margin-bottom: 0.7rem;
+  }
 }
 
 /* ---------- subpages ---------- */

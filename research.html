@@ -2,18 +2,58 @@
 layout: default
 nav: research
 title: Research
-description: Research directions of Yicheng Leng — self-supervised learning, medical image analysis, and image restoration.
+description: Research directions of Yicheng Leng — self-supervised learning for medical imaging, graph and multimodal learning for clinical data, and image restoration.
 body_class: subpage research-page
 ---
 
-<section class="page-section">
+<section class="page-section research-section">
   <h2>Research</h2>
-  <ul class="detail-list">
-    <li>Self-supervised learning for medical image analysis</li>
-    <li>Graph representations for brain networks</li>
-    <li>Vision-language models for corrupted surgical data</li>
-    <li>Computer vision tasks: image restoration, image inpainting, semantic segmentation and watermark removal</li>
-  </ul>
+
+  <article class="research-item">
+    <h3>Self-supervised learning for medical imaging</h3>
+    <dl class="research-meta">
+      <dt>Problem</dt>
+      <dd>Clinical image datasets are small and expensive to annotate, while the morphological variation that carries diagnostic signal — red cell shape, tissue morphology — is exactly what supervised models under-learn from a few hundred labels.</dd>
+      <dt>Approach</dt>
+      <dd>Pre-train representations from unlabelled images with contrastive objectives, and design the negative sampling so that visually similar but clinically different samples are the ones the model has to separate.</dd>
+      <dt>Work</dt>
+      <dd>
+        <a href="publications.html#slrbc">SLRBC</a>, SPIE Medical Imaging 2025 ·
+        <a href="publications.html#autism">Graph transformer for autism detection</a>, IEEE ISBI 2025
+      </dd>
+    </dl>
+  </article>
+
+  <article class="research-item">
+    <h3>Graph and multimodal learning for clinical data</h3>
+    <dl class="research-meta">
+      <dt>Problem</dt>
+      <dd>Brain connectivity is a graph, not a grid, so convolutional inductive biases fit it poorly. Downstream clinical pipelines are further stressed by corruption — surgical video degrades under smoke, blur and lighting shifts that rarely appear in curated benchmarks.</dd>
+      <dt>Approach</dt>
+      <dd>Learn over the structure of connectivity graphs rather than treating them as images, and evaluate multimodal and vision models under generated, non-adversarial corruption instead of clean test sets.</dd>
+      <dt>Work</dt>
+      <dd>
+        <a href="publications.html#autism">Graph transformer for autism detection</a>, IEEE ISBI 2025 ·
+        <a href="publications.html#segstrong">SegSTRONG-C</a>, EndoVis 2024 challenge
+      </dd>
+    </dl>
+  </article>
+
+  <article class="research-item">
+    <h3>Image restoration and visible watermark removal</h3>
+    <dl class="research-meta">
+      <dt>Problem</dt>
+      <dd>Large-area watermarks destroy most of what a restoration model would otherwise condition on. Treating removal as plain image-to-image translation leaves residual traces, and methods that assume a pixel-perfect mask fail on the rough masks available in practice.</dd>
+      <dt>Approach</dt>
+      <dd>Separate watermark exclusion from background restoration, recover content both from what remains visible beneath a translucent watermark and from the surrounding context, and train so that coarse masks still work.</dd>
+      <dt>Work</dt>
+      <dd>
+        <a href="publications.html#aaai24">RIRCI</a>, AAAI 2024 ·
+        <a href="publications.html#aaai25">Inpainting priors for large-area removal</a>, AAAI 2025 ·
+        <a href="publications.html#tip25">Visible video watermark removal</a>, IEEE TIP 2025
+      </dd>
+    </dl>
+  </article>
 
   <a class="back-link" href="index.html">← Back to Home</a>
 </section>
