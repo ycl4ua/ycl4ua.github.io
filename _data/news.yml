@@ -1,13 +1,13 @@
 # 每条新闻倒序渲染到首页。加一条就复制一行。
 # 想暂时隐藏整块，清空本文件即可。
 
+- date: "2026.10"
+  text: "SegSTRONG-C, the EndoVis 2024 challenge report, appears in IEEE Transactions on Medical Imaging."
 - date: "2025.04"
   text: "Two first-author papers at IEEE ISBI 2025 (Oral) and SPIE Medical Imaging 2025."
 - date: "2025.02"
   text: "Bridging Knowledge Gap Between Image Inpainting and Large-Area Visible Watermark Removal — AAAI 2025."
 - date: "2025.02"
   text: "Decouple and Couple: Exploiting Prior Knowledge for Visible Video Watermark Removal — IEEE TIP 2025."
-- date: "2024.07"
-  text: "SegSTRONG-C, the EndoVis 2024 challenge report on robust surgical tool segmentation, on arXiv."
 - date: "2024.03"
   text: "Removing Interference and Recovering Content Imaginatively for Visible Watermark Removal — AAAI 2024."
