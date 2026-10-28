@@ -1,15 +1,16 @@
 # 每条新闻倒序渲染到首页。加一条就复制一行。
+# text 里可以直接写 HTML；<strong> 标注 venue，<a> 跳转到 publications 页对应锚点。
 # 想暂时隐藏整块，清空本文件即可。
 
 - date: "2026.10"
   text: "SegSTRONG-C, the EndoVis 2024 challenge report, appears in <strong>IEEE Transactions on Medical Imaging</strong>."
 - date: "2025.04"
-  text: "A first-authored paper on SLRBC, a self-supervised contrastive framework for red blood cell analysis, accepted by <strong>SPIE Medical Imaging 2025</strong>."
+  text: '<a href="publications.html#slrbc">A first-authored paper</a> on a self-supervised contrastive framework for red blood cell analysis, accepted by <strong>SPIE Medical Imaging 2025</strong>.'
 - date: "2025.04"
-  text: "A first-authored paper on self-supervised graph transformers for autism detection, accepted by <strong>IEEE ISBI 2025 (Oral)</strong>."
+  text: '<a href="publications.html#autism">A first-authored paper</a> on self-supervised graph transformers for autism detection, accepted by <strong>IEEE ISBI 2025 (Oral)</strong>.'
 - date: "2025.02"
-  text: "A first-authored paper on bringing inpainting priors to large-area watermark removal, accepted by <strong>AAAI 2025</strong>."
+  text: '<a href="publications.html#aaai25">A first-authored paper</a> on bringing inpainting priors to large-area watermark removal, accepted by <strong>AAAI 2025</strong>.'
 - date: "2025.02"
-  text: "A paper on exploiting prior knowledge for visible video watermark removal, accepted by <strong>IEEE TIP 2025</strong>."
+  text: '<a href="publications.html#tip25">A paper</a> on exploiting prior knowledge for visible video watermark removal, accepted by <strong>IEEE TIP 2025</strong>.'
 - date: "2024.03"
-  text: "A first-authored paper on RIRCI, a two-stage framework that separates watermark exclusion from background restoration, accepted by <strong>AAAI 2024</strong>."
+  text: '<a href="publications.html#aaai24">A first-authored paper</a> on a two-stage framework that separates watermark exclusion from background restoration, accepted by <strong>AAAI 2024</strong>.'

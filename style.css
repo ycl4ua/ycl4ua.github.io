@@ -399,7 +399,14 @@ strong {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
+  scroll-margin-top: 6rem;
   transition: border-color 200ms var(--ease), box-shadow 200ms var(--ease);
+}
+
+/* Landing from a news link: make the target card obvious without a flash. */
+.pub-block:target {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--line-strong));
+  box-shadow: 0 0 0 3px var(--accent-wash), var(--shadow-sm);
 }
 
 .pub-block:hover {
