@@ -1,0 +1,11 @@
+# News 条目。每条按 date 倒序渲染在首页。加一条就复制一行。
+# 想暂时隐藏 News 整块，把这个文件里的条目清空即可（首页会自动不渲染）。
+
+- date: "2025.10"
+  text: "Two papers on medical image analysis accepted to IEEE ISBI 2025 (Oral) and SPIE Medical Imaging 2025."
+- date: "2025.02"
+  text: "Our paper on large-area visible watermark removal was published at AAAI 2025."
+- date: "2024.12"
+  text: "Code for RIRCI is released at github.com/ycl4ua/RIRCI."
+- date: "2024.03"
+  text: "Our paper on visible watermark removal was published at AAAI 2024."

@@ -1,149 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Publications – Yicheng Leng</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      color: #24292e;
-      margin: 0;
-      line-height: 1.6;
-    }
-    header {
-      background: #fff;
-      padding: 1rem 2rem;
-    }
-    header .container {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      align-items: center;
-    }
-    nav a {
-      color: #24292e;
-      margin-left: 1rem;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    section h2 {
-      border-bottom: 2px solid #e1e4e8;
-      padding-bottom: .5rem;
-      margin-bottom: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: .9rem;
-      color: #586069;
-    }
-    .back-link {
-      display: inline-block;
-      margin-top: 2rem;
-      background-color: #24292e;
-      color: white;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-    .pub-block { margin-bottom: 3rem; }
-    img { max-width: 100%; border-radius: 4px; }
-  </style>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="subpage publications-page">
+---
+layout: default
+nav: publications
+title: Publications
+description: Peer-reviewed publications by Yicheng Leng on self-supervised learning, medical imaging, and visible watermark removal.
+body_class: subpage publications-page
+---
 
-  <header>
-    <div class="container">
-      <div style="justify-self: start;">
-        <a href="https://ece.engineering.arizona.edu/" style="text-decoration: none; display: flex; align-items: center;">
-          <div style="height: 40px; border-radius: 20px; overflow: hidden; display: flex; align-items: center;">
-            <img src="ECE.png" alt="ECE Logo" style="height: 100%; width: auto; object-fit: cover;">
-          </div>
-        </a>
-      </div>
-      <div style="justify-self: center;">
-        <a href="https://vsilab.github.io/" style="text-decoration: none; display: flex; align-items: center;">
-          <div style="width: 40px; height: 40px; background-color: #990000; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
-            <span style="font-size: 0.9rem; user-select: none;">VSI</span>
-          </div>
-        </a>
-      </div>
-      <nav style="justify-self: end; display: flex; align-items: center;">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html" class="active" aria-current="page">Publications</a>
-        <a href="education.html">Education</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+<section class="page-section publications-section">
+  <h2>Publications <span class="heading-note">First Author</span></h2>
+
+  <article class="pub-block">
+    <figure class="pub-figure">
+      <img src="autism.png" alt="Autism Project" />
+    </figure>
+    <div class="pub-body">
+      <p class="pub-venue"><span class="chip">IEEE ISBI 2025</span><span class="chip chip--quiet">Oral</span></p>
+      <h3 class="pub-title"><a href="https://arxiv.org/pdf/2501.16346">Self-supervised Graph Transformer with Contrastive Learning for Brain Connectivity Analysis towards Improving Autism Detection</a></h3>
+      <p class="pub-authors"><strong>Yicheng Leng</strong>, Syed Muhammad Anwar, Islem Rekik, Sen He, Eung-Joo Lee</p>
+      <p class="pub-tldr">A brain-network transformer pre-trained with contrastive learning over randomly altered connectivity graphs, reaching 82.6 AUROC and 74% accuracy on ABIDE autism detection.</p>
+      <p class="pub-links">
+        <a class="tag" href="https://arxiv.org/pdf/2501.16346">Paper</a>
+        <a class="tag" href="https://arxiv.org/abs/2501.16346">arXiv</a>
+      </p>
     </div>
-  </header>
+  </article>
 
-  <section class="page-section publications-section">
-    <h2>Publications (First Author)</h2>
-
-    <div class="pub-block">
-      <img src="autism.png" alt="Autism Project">
-      <p><em><a href="https://arxiv.org/pdf/2501.16346" style="text-decoration: underline;">Self-supervised Graph Transformer with Contrastive Learning for Brain Connectivity Analysis towards Improving Autism Detection</a></em></p>
-      <p><strong>Yicheng Leng</strong>, Syed Muhammad Anwar, Islem Rekik, Sen He, Eung-Joo Lee</p>
-      <p>IEEE ISBI 2025 (Oral)</p>
+  <article class="pub-block">
+    <figure class="pub-figure">
+      <img src="rbc.png" alt="SLRBC Project" />
+    </figure>
+    <div class="pub-body">
+      <p class="pub-venue"><span class="chip">SPIE Medical Imaging 2025</span></p>
+      <h3 class="pub-title"><a href="https://doi.org/10.1117/12.3047367">SLRBC: Self-supervised Learning for Red Blood Cell Segmentation and Classification with a Biased Contrastive Loss</a></h3>
+      <p class="pub-authors"><strong>Yicheng Leng</strong>, Eung-Joo Lee</p>
+      <p class="pub-tldr">Picks harder negatives by image similarity and pairs them with a biased contrastive loss, lifting red blood cell classification accuracy to 0.840 over SimCLR, MoCo, and DINO.</p>
+      <p class="pub-links">
+        <a class="tag" href="https://doi.org/10.1117/12.3047367">Paper</a>
+      </p>
     </div>
+  </article>
 
-    <div class="pub-block">
-      <img src="rbc.png" alt="SLRBC Project">
-      <p><em><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13413/1341313/" style="text-decoration: underline;">SLRBC: Self-supervised Learning for Red Blood Cell Segmentation</a></em></p>
-      <p><strong>Yicheng Leng</strong>, Eung-Joo Lee</p>
-      <p>SPIE Medical Imaging, 2025</p>
+  <article class="pub-block">
+    <figure class="pub-figure">
+      <img src="watermark2025.png" alt="Watermark Removal 2025" />
+    </figure>
+    <div class="pub-body">
+      <p class="pub-venue"><span class="chip">AAAI 2025</span></p>
+      <h3 class="pub-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/32484">Bridging Knowledge Gap Between Image Inpainting and Large-Area Visible Watermark Removal</a></h3>
+      <p class="pub-authors"><strong>Yicheng Leng</strong>, Chaowei Fang, Junye Chen, Yixiang Fang, Sheng Li, Guanbin Li</p>
+      <p class="pub-tldr">Brings the prior of a pretrained inpainting model to large-area watermark removal by gated fusion of watermark-cleaned features, and trains on coarse masks so it holds up when the mask is imprecise.</p>
+      <p class="pub-links">
+        <a class="tag" href="https://ojs.aaai.org/index.php/AAAI/article/view/32484">Paper</a>
+        <a class="tag" href="https://arxiv.org/abs/2504.04687">arXiv</a>
+        <a class="tag tag--code" href="https://github.com/ycl4ua/Large-Area-Visible-Watermark-Removal">Code</a>
+      </p>
     </div>
+  </article>
 
-    <div class="pub-block">
-      <img src="watermark2025.png" alt="Watermark Removal 2025">
-      <p><em><a href="https://ojs.aaai.org/index.php/AAAI/article/view/32484" style="text-decoration: underline;">Bridging Knowledge Gap Between Image Inpainting and Large-Area Visible Watermark Removal</a></em></p>
-      <p><strong>Yicheng Leng</strong>, Chaowei Fang, Junye Chen, Yixiang Fang, Sheng Li, Guanbin Li</p>
-      <p>AAAI 2025</p>
-      <p>Code: <a href="https://github.com/ycl4ua/Large-Area-Visible-Watermark-Removal" style="text-decoration: underline;">https://github.com/ycl4ua/Large-Area-Visible-Watermark-Removal</a></p>
+  <article class="pub-block">
+    <figure class="pub-figure">
+      <img src="watermark2024.png" alt="Watermark Removal 2024" />
+    </figure>
+    <div class="pub-body">
+      <p class="pub-venue"><span class="chip">AAAI 2024</span></p>
+      <h3 class="pub-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/28080">Removing interference and recovering content imaginatively for visible watermark removal</a></h3>
+      <p class="pub-authors"><strong>Yicheng Leng</strong>, Chaowei Fang, Gen Li, Yixiang Fang, Guanbin Li</p>
+      <p class="pub-tldr">Separates watermark exclusion from background restoration, then fuses content recovered from beneath the watermark with content imagined from the surrounding context (HWVOC PSNR 39.52).</p>
+      <p class="pub-links">
+        <a class="tag" href="https://ojs.aaai.org/index.php/AAAI/article/view/28080">Paper</a>
+        <a class="tag tag--code" href="https://github.com/ycl4ua/RIRCI">Code</a>
+      </p>
     </div>
+  </article>
 
-    <div class="pub-block">
-      <img src="watermark2024.png" alt="Watermark Removal 2024">
-      <p><em><a href="https://ojs.aaai.org/index.php/AAAI/article/view/28080" style="text-decoration: underline;">Removing interference and recovering content imaginatively for visible watermark removal</a></em></p>
-      <p><strong>Yicheng Leng</strong>, Chaowei Fang, Gen Li, Yixiang Fang, Guanbin Li</p>
-      <p>AAAI 2024</p>
-      <p>Code: <a href="https://github.com/ycl4ua/RIRCI" style="text-decoration: underline;">https://github.com/ycl4ua/RIRCI</a></p>
+  <h2 class="subsection-heading">Collaborative Publications</h2>
+
+  <article class="pub-block coauthor-pub">
+    <div class="pub-body">
+      <p class="pub-venue"><span class="chip">IEEE TIP 2025</span></p>
+      <h3 class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10871924">Decouple and couple: exploiting prior knowledge for visible video watermark removal</a></h3>
+      <p class="pub-authors">Junye Chen, Chaowei Fang, Jichang Li, <strong>Yicheng Leng</strong>, Guanbin Li</p>
     </div>
+  </article>
 
-    <h2 class="subsection-heading">Collaborative Publications</h2>
-
-    <div class="pub-block coauthor-pub">
-      <p><em><a href="https://ieeexplore.ieee.org/abstract/document/10871924" style="text-decoration: underline;">Decouple and couple: exploiting prior knowledge for visible video watermark removal</a></em></p>
-      <p>Junye Chen, Chaowei Fang, Jichang Li, <strong>Yicheng Leng</strong>, Guanbin Li</p>
-      <p>IEEE Transactions on Image Processing, 2025</p>
+  <article class="pub-block coauthor-pub">
+    <div class="pub-body">
+      <p class="pub-venue"><span class="chip">arXiv 2024</span></p>
+      <h3 class="pub-title"><a href="https://arxiv.org/abs/2407.11906">SegSTRONG-C: Segmenting Surgical Tools Robustly On Non-adversarial Generated Corruptions — An EndoVis' 24 Challenge</a></h3>
+      <p class="pub-authors">Hao Ding, Yuqian Zhang, Tuxun Lu, Ruixing Liang, ... <strong>Yicheng Leng</strong>, et al.</p>
     </div>
+  </article>
 
-    <div class="pub-block coauthor-pub">
-      <p><em><a href="https://arxiv.org/abs/2407.11906" style="text-decoration: underline;">SegSTRONG-C: Segmenting Surgical Tools Robustly On Non-adversarial Generated Corruptions--An EndoVis' 24 Challenge</a></em></p>
-      <p>Hao Ding, Yuqian Zhang, Tuxun Lu, Ruixing Liang, ... <strong>Yicheng Leng</strong>, et al.</p>
-      <p>arXiv preprint arXiv:2407.11906, 2024</p>
-    </div>
-
-    <a class="back-link" href="index.html">← Back to Home</a>
-  </section>
-
-  <footer>
-    &copy; 2025 Yicheng Leng. Built with ❤️ and GitHub Pages.
-    <div style="margin-top: 1rem;">
-      <div style="font-size: 0.85rem; margin-bottom: 0.5rem;">Visitor Map</div>
-      <div style="width: 12.5%; min-width: 140px; margin: 0 auto;">
-        <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=kgDgySmuZpxpjnpa9VzLMQ8yFEnQrKJAL7xI-aLopRc&cl=ffffff&w=a"></script>
-      </div>
-    </div>
-  </footer>
-
-</body>
-</html>
+  <a class="back-link" href="index.html">← Back to Home</a>
+</section>
