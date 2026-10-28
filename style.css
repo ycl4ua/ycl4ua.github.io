@@ -254,32 +254,38 @@ strong {
 
 .hero-facts {
   margin: 1.1rem 0 0;
-  padding: 1rem 0 0;
+  padding: 0.95rem 0 0;
   list-style: none;
   border-top: 1px solid var(--line);
   display: grid;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .hero-facts li {
+  display: grid;
+  grid-template-columns: 14px auto minmax(0, 1fr);
+  align-items: start;
+  gap: 0.28rem;
   margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  line-height: 1.55;
 }
 
-.fact-label {
-  display: block;
-  margin-bottom: 0.14rem;
+.fact-icon {
+  width: 14px;
+  height: 14px;
+  margin-top: 0.16rem;
+  color: var(--accent);
+  flex: 0 0 auto;
+}
+
+.fact-colon {
   color: var(--muted);
-  font-size: 0.66rem;
-  font-weight: 650;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
 }
 
 .fact-value {
-  display: block;
-  color: var(--ink-soft);
-  font-size: 0.8rem;
-  line-height: 1.5;
+  min-width: 0;
   overflow-wrap: anywhere;
 }
 
