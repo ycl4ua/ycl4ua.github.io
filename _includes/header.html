@@ -4,8 +4,6 @@
       <img src="ECSE.svg" alt="College of Engineering, School of Electrical, Computing, and Software Engineering" />
     </a>
 
-    <a class="vsi-badge" href="https://vsilab.github.io/" aria-label="Vision, Systems and Intelligence Lab">VSI</a>
-
-    <nav class="site-nav" aria-label="Main">{%- assign items = "Home:index.html, Research:research.html, Publications:publications.html, Education:education.html, Contact:contact.html" | split: ", " -%}{%- for item in items -%}{%- assign parts = item | split: ":" -%}{%- assign href = parts[1] -%}{%- assign key = href | remove: ".html" %}<a href="{{ href }}"{% if page.nav == key %} class="is-active" aria-current="page"{% endif %}>{{ parts[0] }}</a>{%- endfor -%}</nav>
+    <nav class="site-nav" aria-label="Main">{%- assign items = "Home:index.html, Research:research.html, Publications:publications.html, Education:education.html" | split: ", " -%}{%- for item in items -%}{%- assign parts = item | split: ":" -%}{%- assign href = parts[1] -%}{%- assign key = href | remove: ".html" %}<a href="{{ href }}"{% if page.nav == key %} class="is-active" aria-current="page"{% endif %}>{{ parts[0] }}</a>{%- endfor -%}</nav>
   </div>
 </header>
