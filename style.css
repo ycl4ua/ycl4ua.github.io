@@ -347,10 +347,32 @@ strong {
   transform: translateY(-1px);
 }
 
-.personal-links img {
+.personal-links svg {
   width: 18px;
   height: 18px;
-  opacity: 0.8;
+  display: block;
+}
+
+/* Brand colours, applied only on hover; the resting state stays neutral so
+   the row reads as one set rather than four competing logos. */
+.personal-links a:hover svg {
+  color: var(--brand);
+}
+
+.brand-icon--scholar {
+  --brand: #4285f4;
+}
+
+.brand-icon--linkedin {
+  --brand: #0a66c2;
+}
+
+.brand-icon--github {
+  --brand: #181717;
+}
+
+.brand-icon--orcid {
+  --brand: #a6ce39;
 }
 
 /* ---------- news ---------- */
